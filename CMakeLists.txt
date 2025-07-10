@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # find_package(mujoco REQUIRED PATHS ${MUJOCO_FOLDER} NO_DEFAULT_PATH)
 # find_package (Eigen3 3.3 REQUIRED)
 
-add_executable(${PROJECT_NAME} test/test_messagequeue.cpp)
+add_executable(${PROJECT_NAME} test/test_logger.cpp src/logger.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
                           include)
